@@ -8,18 +8,14 @@
 
 import React from 'react';
 import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
+  View
 } from 'react-native';
 
+import Welcome from './src/containers/welcome';
 
 const App = () => (
   <View>
-    <Text>Hello</Text>
+    <Welcome/>
   </View>
 );
   
