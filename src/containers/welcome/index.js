@@ -33,12 +33,12 @@ const index = () => {
 const styles = StyleSheet.create({
     main: {
         paddingVertical: height/15,
-        height: height,
+        flex: 1,
         justifyContent: "space-between",
         alignItems: "center",
     },
     header: {
-        height: height/2.5,
+        height: '40%',
         justifyContent: "space-between",
         alignItems: "center",
     },
