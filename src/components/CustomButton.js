@@ -1,8 +1,11 @@
 import React from 'react'
 import {TouchableHighlight, Text, StyleSheet} from 'react-native'
-const CustomButton = () => {
+import {route} from '../routes';
+
+const CustomButton = ({navigateTo}) => {
     return (
-        <TouchableHighlight style={styles.buttonContainer}>
+        <TouchableHighlight style={styles.buttonContainer}
+        onPress={() => navigateTo(route.WORKOUT)}>
             <Text style={styles.buttonText}>Start Workout</Text>
         </TouchableHighlight>
     )

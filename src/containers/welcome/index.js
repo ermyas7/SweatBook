@@ -11,7 +11,7 @@ import CustomButton from '../../components/CustomButton';
 
 const {width, height} = Dimensions.get('window');
 
-const index = () => {
+const index = (props) => {
     return (
         <View style={styles.main}>
             <View style={styles.header}>
@@ -24,7 +24,7 @@ const index = () => {
                 </View>
             </View>
             <View style={styles.footer}> 
-                <CustomButton/>
+                <CustomButton navigateTo={props.navigation.navigate}/>
             </View>
         </View>        
     )
