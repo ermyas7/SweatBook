@@ -4,7 +4,7 @@ import {createAppContainer} from 'react-navigation'
 import {createBottomTabNavigator} from 'react-navigation-tabs'
 
 const Tab1 = () => <View><Text>Hello World!</Text></View>
-const Tab2 = () => <View><Text>Tab2</Text></View>
+const Tab2 = () => <View><Text>Content 2</Text></View>
 const Tab3 = () => <View><Text>Tab3</Text></View>
 
 const tabNavigator = createBottomTabNavigator({
