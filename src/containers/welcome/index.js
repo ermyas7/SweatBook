@@ -11,7 +11,7 @@ import CustomButton from '../../components/CustomButton';
 
 const {width, height} = Dimensions.get('window');
 
-const index = () => {
+const index = (props) => {
     return (
         <View style={styles.main}>
             <View style={styles.header}>
@@ -24,7 +24,7 @@ const index = () => {
                 </View>
             </View>
             <View style={styles.footer}> 
-                <CustomButton/>
+                <CustomButton navigateTo={props.navigation.navigate}/>
             </View>
         </View>        
     )
@@ -33,12 +33,12 @@ const index = () => {
 const styles = StyleSheet.create({
     main: {
         paddingVertical: height/15,
-        height: height,
+        flex: 1,
         justifyContent: "space-between",
         alignItems: "center",
     },
     header: {
-        height: height/2.5,
+        height: '40%',
         justifyContent: "space-between",
         alignItems: "center",
     },
