@@ -15,7 +15,8 @@ const styles = StyleSheet.create({
     },
     heading:{
         fontSize: 50,
-        fontWeight: '700'
+        fontWeight: '700',
+        color: '#fff'
     }
 });
 export default Header

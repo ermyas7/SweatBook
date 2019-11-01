@@ -16,12 +16,14 @@ const styles = StyleSheet.create({
         paddingHorizontal: 25,
         paddingVertical: 15,
         borderColor: '#333',
-        borderWidth: 2,
-        borderRadius: 15
+        borderWidth: 3,
+        borderRadius: 15,
+        borderColor: '#fff'
     },
     buttonText: {
         fontSize: 35,
-        fontWeight: '500'
+        fontWeight: '500',
+        color: '#fff'
     }
 })
 

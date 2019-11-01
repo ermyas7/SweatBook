@@ -3,8 +3,11 @@ import {
     View,
     Text,
     StyleSheet,
-    Dimensions
+    Dimensions,
+    ImageBackground
 } from 'react-native';
+
+const BgImg = '../../../assets/images/circle-blues.png';
 
 import Header from './Header';
 import CustomButton from '../../components/CustomButton';
@@ -26,7 +29,7 @@ const index = (props) => {
             <View style={styles.footer}> 
                 <CustomButton navigateTo={props.navigation.navigate}/>
             </View>
-        </View>        
+        </View>           
     )
 }
 
@@ -36,6 +39,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "space-between",
         alignItems: "center",
+        backgroundColor: '#498c8a'
     },
     header: {
         height: '40%',
@@ -44,11 +48,13 @@ const styles = StyleSheet.create({
     },
     subheading: {
         fontSize: 35,
-        fontWeight: '500'
+        fontWeight: '500',
+        color: '#fff'
     },
     dateText: {
         fontSize: 40,
-        fontWeight: '600'
+        fontWeight: '600',
+        color: '#fff'
     },
     footer:{
         
